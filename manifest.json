@@ -1,0 +1,674 @@
+{
+	"@platforms": [
+		"android",
+		"iPhone",
+		"iPad"
+	],
+	"id": "H5BF3A11E",/*应用的标识，创建应用时自动生成，勿手动修改*/
+	"name": "公交集团资产管理系统测试",/*应用名称，程序桌面图标名称*/
+	"version": {
+		"name": "1.0.0",/*应用版本名称*/
+		"code": "83"
+	},
+	"description": "",/*应用描述信息*/
+	"icons": {
+		"72": "icon.png"
+	},
+	"launch_path": "index/html/index.html",/*应用的入口页面，默认为根目录下的index.html；支持网络地址，必须以http://或https://开头*/
+	"developer": {
+		"name": "",/*开发者名称*/
+		"email": "",/*开发者邮箱地址*/
+		"url": "http://www.dcloud.io"
+	},
+	"permissions": {
+		"Cache": {
+			"description": "管理应用缓存"
+		},
+		"Console": {
+			"description": "跟踪调试输出日志"
+		},
+		"Contacts": {
+			"description": "访问系统联系人信息"
+		},
+		"Events": {
+			"description": "应用扩展事件"
+		},
+
+		"Maps": {},
+		"Zip": {},
+		"File": {},
+		"Audio": {},
+		"OAuth": {},
+		"Camera": {},
+		"Device": {},
+		"Runtime": {},
+		"Gallery": {},
+		"Storage": {},
+		"Webview": {},
+		"Barcode": {},
+		"Uploader": {},
+		"NativeUI": {},
+		"NativeObj": {},
+		"Proximity": {},
+		"Navigator": {},
+		"Invocation": {},
+		"Downloader": {},
+		"Orientation": {},
+		"Geolocation": {},
+		"Accelerometer": {},
+		"XMLHttpRequest": {},
+		"Payment": {
+			"alipay": {
+				"decsription": "支付宝"
+			}
+		},
+		"Push": {
+			"description": "管理推送消息插件"
+		}
+	},
+	"plus": {
+		"safearea": {
+			"bottom": {
+				"offset": "auto"
+			}
+		},
+		"popGesture": "close",
+		"statusbar": {
+			"immersed": true
+		},
+		"splashscreen": {
+			"autoclose": true,/*是否自动关闭程序启动界面，true表示应用加载应用入口页面后自动关闭；false则需调plus.navigator.closeSplashscreen()关闭*/
+			"waiting": true,
+			"delay": "0"
+		},
+		"runmode": "liberate",/*应用的首次启动运行模式，可取liberate或normal，liberate模式在第一次启动时将解压应用资源（Android平台File API才可正常访问_www目录）*/
+		"signature": "Sk9JTiBVUyBtYWlsdG86aHIyMDEzQGRjbG91ZC5pbw==",/*可选，保留给应用签名，暂不使用*/
+		"distribute": {
+			"plugins": {
+				"push": {
+					"igexin": {
+						"appid": "BmCULoxHey6Z0HEW9EnbLA",
+						"appkey": "IoF5H4TJtD6s02qs9NPBz5",
+						"appsecret": "UrszJ0hWST6vXGCFPxKbW5"
+					}
+				},
+				"payment": {
+					"alipay": {
+						"description": "阿里支付",
+						"scheme": ""
+					}
+				},
+				"maps": {
+					"baidu": {
+						"appkey_ios": "Pybae3iIlbM5xD46Xju4oE2VanzDe6Ur",
+						"appkey_android": "qGChq1DX8p3hu4EfrsE2Mmc0zOCzoQxk",
+						"appkey": "",
+						"description": ""
+					}
+				}
+			},
+			"apple": {
+				"appid": "",/*iOS应用标识，苹果开发网站申请的appid，如io.dcloud.HelloH5*/
+				"mobileprovision": "",/*iOS应用打包配置文件*/
+				"password": "",/*iOS应用打包个人证书导入密码*/
+				"p12": "",/*iOS应用打包个人证书，打包配置文件关联的个人证书*/
+				"devices": "universal",/*iOS应用支持的设备类型，可取值iphone/ipad/universal*/
+				"frameworks": []
+			},
+			"google": {
+				"packagename": "",/*Android应用包名，如io.dcloud.HelloH5*/
+				"keystore": "",/*Android应用打包使用的密钥库文件*/
+				"password": "",/*Android应用打包使用密钥库中证书的密码*/
+				"aliasname": "",/*Android应用打包使用密钥库中证书的别名*/
+				"permissions": [
+					"<uses-permission android:name=\"android.permission.READ_CONTACTS\"/>",
+					"<uses-permission android:name=\"android.permission.MOUNT_UNMOUNT_FILESYSTEMS\"/>",
+					"<uses-permission android:name=\"android.permission.VIBRATE\"/>",
+					"<uses-permission android:name=\"android.permission.READ_LOGS\"/>",
+					"<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\"/>",
+					"<uses-feature android:name=\"android.hardware.camera.autofocus\"/>",
+					"<uses-permission android:name=\"android.permission.SYSTEM_ALERT_WINDOW\"/>",
+					"<uses-permission android:name=\"android.permission.WRITE_CONTACTS\"/>",
+					"<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\"/>",
+					"<uses-permission android:name=\"android.permission.RECEIVE_BOOT_COMPLETED\"/>",
+					"<uses-permission android:name=\"com.android.launcher.permission.UNINSTALL_SHORTCUT\"/>",
+					"<uses-permission android:name=\"android.permission.CAMERA\"/>",
+					"<uses-permission android:name=\"android.permission.RECORD_AUDIO\"/>",
+					"<uses-permission android:name=\"android.permission.GET_ACCOUNTS\"/>",
+					"<uses-permission android:name=\"android.permission.MODIFY_AUDIO_SETTINGS\"/>",
+					"<uses-permission android:name=\"com.android.launcher.permission.INSTALL_SHORTCUT\"/>",
+					"<uses-permission android:name=\"android.permission.INTERNET\"/>",
+					"<uses-permission android:name=\"android.permission.READ_PHONE_STATE\"/>",
+					"<uses-permission android:name=\"android.permission.CHANGE_WIFI_STATE\"/>",
+					"<uses-permission android:name=\"android.permission.WAKE_LOCK\"/>",
+					"<uses-permission android:name=\"android.permission.FLASHLIGHT\"/>",
+					"<uses-permission android:name=\"android.permission.CALL_PHONE\"/>",
+					"<uses-permission android:name=\"android.permission.ACCESS_COARSE_LOCATION\"/>",
+					"<uses-feature android:name=\"android.hardware.camera\"/>",
+					"<uses-permission android:name=\"android.permission.ACCESS_FINE_LOCATION\"/>",
+					"<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\"/>",
+					"<uses-permission android:name=\"android.permission.WRITE_SETTINGS\"/>"
+				]
+			},
+			"orientation": [
+				"portrait-primary",
+				"portrait-secondary"
+			],/*应用支持的方向，portrait-primary：竖屏正方向；portrait-secondary：竖屏反方向；landscape-primary：横屏正方向；landscape-secondary：横屏反方向*/
+			"icons": {
+				"ios": {
+					"prerendered": true, /*应用图标是否已经高亮处理，在iOS6及以下设备上有效*/
+					/*应用图标，分辨率：512x512，用于自动生成各种尺寸程序图标*/
+					"iphone": {
+						"normal": "",/*iPhone普通屏幕程序图标，分辨率：57x57*/
+						"retina": "",/*iPhone高分屏程序图标，分辨率：114x114*/
+						/*iPhone iOS7高分屏程序图标，分辨率：120x120*/
+						"spotlight-normal": "", /*iPhone Spotlight搜索程序图标，分辨率：29x29*/
+						"spotlight-retina": "", /*iPhone高分屏Spotlight搜索程序图标，分辨率：58x58*/
+						/*iPhone iOS7高分屏Spotlight搜索程序图标，分辨率：80x80*/
+						"settings-normal": "", /*iPhone设置页面程序图标，分辨率：29x29*/
+						"app@2x": "unpackage/res/icons/120x120.png",
+						"app@3x": "unpackage/res/icons/180x180.png",
+						"settings@3x": "unpackage/res/icons/87x87.png",
+						"settings@2x": "unpackage/res/icons/58x58.png",
+						"spotlight@2x": "unpackage/res/icons/80x80.png",
+						"spotlight@3x": "unpackage/res/icons/120x120.png",
+						"notification@3x": "unpackage/res/icons/60x60.png",
+						"notification@2x": "unpackage/res/icons/40x40.png"
+					},
+					"ipad": {
+						"normal": "", /*iPad普通屏幕程序图标，分辨率：72x72*/
+						"retina": "", /*iPad高分屏程序图标，分辨率：144x144*/
+						/*iPad iOS7程序图标，分辨率：76x76*/
+						/*iPad iOS7高分屏程序图标，分辨率：152x152*/
+						"spotlight-normal": "", /*iPad Spotlight搜索程序图标，分辨率：50x50*/
+						"spotlight-retina": "", /*iPad高分屏Spotlight搜索程序图标，分辨率：100x100*/
+						/*iPad iOS7 Spotlight搜索程序图标，分辨率：40x40*/
+						/*iPad iOS7高分屏Spotlight搜索程序图标，分辨率：80x80*/
+						/*iPad设置页面程序图标，分辨率：29x29*/
+						"app": "unpackage/res/icons/76x76.png",
+						"app@2x": "unpackage/res/icons/152x152.png",
+						"settings": "unpackage/res/icons/29x29.png",
+						"proapp@2x": "unpackage/res/icons/167x167.png",
+						"spotlight": "unpackage/res/icons/40x40.png",
+						"settings@2x": "unpackage/res/icons/58x58.png",
+						"spotlight@2x": "unpackage/res/icons/80x80.png",
+						"notification": "unpackage/res/icons/20x20.png",
+						"notification@2x": "unpackage/res/icons/40x40.png"
+					},
+					"appstore": "unpackage/res/icons/1024x1024.png"
+				},
+				"android": {
+					"mdpi": "unpackage/res/icons/48x48.png", /*普通屏程序图标，分辨率：48x48*/
+					"ldpi": "unpackage/res/icons/48x48.png", /*大屏程序图标，分辨率：48x48*/
+					"hdpi": "unpackage/res/icons/72x72.png", /*高分屏程序图标，分辨率：72x72*/
+					"xhdpi": "unpackage/res/icons/96x96.png",/*720P高分屏程序图标，分辨率：96x96*/
+					"xxhdpi": "unpackage/res/icons/144x144.png",
+					"xxxhdpi": "unpackage/res/icons/192x192.png"
+				}
+			},
+			"splashscreen": {
+				"ios": {
+					"iphone": {
+						"default": ""
+					},
+					"ipad": {
+						"portrait": "", /*iPad竖屏启动图片，分辨率：768x1004*/
+						"portrait-retina": "",/*iPad高分屏竖屏图片，分辨率：1536x2008*/
+						"landscape": "", /*iPad横屏启动图片，分辨率：1024x748*/
+						"landscape-retina": "", /*iPad高分屏横屏启动图片，分辨率：2048x1496*/
+						"portrait7": "", /*iPad iOS7竖屏启动图片，分辨率：768x1024*/
+						"portrait-retina7": "",/*iPad iOS7高分屏竖屏图片，分辨率：1536x2048*/
+						"landscape7": "", /*iPad iOS7横屏启动图片，分辨率：1024x768*/
+						"landscape-retina7": ""
+					}
+				},
+				"android": {
+					"mdpi": "", /*普通屏启动图片，分辨率：240x282*/
+					"ldpi": "",
+					"xhdpi": "C:/Users/admin/Desktop/启动页.png",
+					"hdpi": "C:/Users/admin/Desktop/启动页.png",
+					"xxhdpi": "C:/Users/admin/Desktop/启动页.png"
+				}
+			},
+			"debug": false
+		},
+		"adid": "129257170805"
+	},
+	"dependencies": {
+		"pages": {
+			"index/html/index.html": {
+				"resources": [
+					"home/html/home-main.html",
+					"order/html/order-main.html",
+					"src/img/index-icon/order-bg-active.png",
+					"ucenter/html/ucenter-main.html"
+				],
+				"refer": [
+					"news/html/news-main.html",
+					"report/html/report-main.html",
+					"news/html/news.html"
+				],
+				"priority": 0
+			},
+			"home/html/home-main.html": {
+				"resources": [],
+				"refer": [
+					"home/html/scanner.html",
+					"home/html/phone-book.html",
+					"home/html/news.html",
+					"login/html/login.html",
+					"ucenter/html/my-electric.html",
+					"home/html/today-sales.html",
+					"home/html/daily-knowledge.html",
+					"home/html/search.html",
+					"home/html/notice.html",
+					"Approval/html/Approval-main.html",
+					"Assets/html/Assets-list.html"
+				],
+				"priority": 0
+			},
+			"ucenter/html/ucenter-main.html": {
+				"resources": [],
+				"refer": [
+					"login/html/login.html",
+					"ucenter/html/my-electric.html",
+					"ucenter/html/settings-main.html",
+					"ucenter/html/my-order.html",
+					"home/html/daily-knowledge.html",
+					"home/html/news.html",
+					"ucenter/html/aboutus.html",
+					"login/html/change-pwd.html",
+					"ucenter/html/ucenter-info.html"
+				],
+				"priority": 0
+			},
+			"ucenter/html/settings-main.html": {
+				"resources": [],
+				"refer": [
+					"ucenter/html/settings/address-manage.html",
+					"ucenter/html/settings/feedback.html",
+					"login/html/change-pwd.html"
+				],
+				"priority": 0
+			},
+			"login/html/login.html": {
+				"resources": [],
+				"refer": [
+					"login/html/register.html",
+					"login/html/forget-pwd.html",
+					"home/html/home-main.html",
+					"index/html/index.html"
+				],
+				"priority": 0
+			},
+			"login/html/register.html": {
+				"resources": [],
+				"refer": [
+					"login/html/real_name.html",
+					"login/html/law.html"
+				],
+				"priority": 0
+			},
+			"home/html/today-sales.html": {
+				"resources": [],
+				"refer": [
+					"home/html/today-sales-details.html"
+				],
+				"priority": 0
+			},
+			"home/html/daily-knowledge.html": {
+				"resources": [],
+				"refer": [
+					"home/html/daily-knowledge-details.html"
+				],
+				"priority": 0
+			},
+			"ucenter/html/my-electric.html": {
+				"resources": [],
+				"refer": [
+					"ucenter/html/my-electric/add-electric.html",
+					"ucenter/html/my-electric/find-site.html",
+					"ucenter/html/my-electric/electric-detail.html",
+					"ucenter/html/my-electric/bind-electric.html"
+				],
+				"priority": 0
+			},
+			"ucenter/html/settings/address-manage.html": {
+				"resources": [],
+				"refer": [
+					"ucenter/html/settings/add-address.html",
+					"ucenter/html/settings/edit-address.html"
+				],
+				"priority": 0
+			},
+			"ucenter/html/my-electric/add-electric.html": {
+				"resources": [],
+				"refer": [
+					"ucenter/html/settings/address-manage.html",
+					"ucenter/html/my-electric/scanners.html"
+				],
+				"priority": 0
+			},
+			"ucenter/html/my-electric/find-site.html": {
+				"resources": [],
+				"refer": [
+					"ucenter/html/my-electric/baoxiu-details.html",
+					"ucenter/html/my-electric/site-details.html"
+				],
+				"priority": 0
+			},
+			"ucenter/html/my-electric/site-details.html": {
+				"resources": [],
+				"refer": [
+					"ucenter/html/my-electric/site-more-comment.html",
+					"ucenter/html/my-electric/baoxiu-details.html"
+				],
+				"priority": 0
+			},
+			"ucenter/html/my-electric/baoxiu-details.html": {
+				"resources": [],
+				"refer": [
+					"ucenter/html/my-electric/site-details.html",
+					"ucenter/html/my-electric/baoxiu-fault-img.html",
+					"ucenter/html/my-electric/baoxiu-successful.html"
+				],
+				"priority": 0
+			},
+			"order/html/order-main.html": {
+				"resources": [],
+				"refer": [
+					"order/html/order-search.html",
+					"order/html/order-details.html",
+					"home/html/news.html"
+				],
+				"priority": 0
+			},
+			"order/html/order-search.html": {
+				"resources": [],
+				"refer": [
+					"order/html/order-searchResult.html"
+				],
+				"priority": 0
+			},
+			"ucenter/html/my-order.html": {
+				"resources": [],
+				"refer": [
+					"order/html/order-details.html"
+				],
+				"priority": 0
+			},
+			"order/html/order-details.html": {
+				"resources": [],
+				"refer": [
+					"order/html/order-evaluate.html",
+					"ucenter/html/my-electric/electric-detail.html"
+				],
+				"priority": 0
+			},
+			"order/html/order-evaluate.html": {
+				"resources": [],
+				"refer": [
+					"order/html/order-evaluate-successful.html"
+				],
+				"priority": 0
+			},
+			"ucenter/html/my-electric/bind-electric.html": {
+				"resources": [],
+				"refer": [
+					"ucenter/html/my-electric.html"
+				],
+				"priority": 0
+			},
+			"home/html/scanner.html": {
+				"resources": [],
+				"refer": [
+					"ucenter/html/my-electric/add-electric.html",
+					"Assets/html/Assets-detail.html",
+					"Approval/html/Inspection.html"
+				],
+				"priority": 0
+			},
+			"home/html/search.html": {
+				"resources": [],
+				"refer": [
+					"home/html/searchResult.html"
+				],
+				"priority": 0
+			},
+			"home/html/notice.html": {
+				"resources": [],
+				"refer": [
+					"home/html/notice-details.html",
+					"login/html/login.html"
+				],
+				"priority": 0
+			},
+			"login/html/change-pwd.html": {
+				"resources": [],
+				"refer": [
+					"login/html/forget-pwd.html"
+				],
+				"priority": 0
+			},
+			"Approval/html/Approval-main.html": {
+				"resources": [],
+				"refer": [
+					"Assets/html/Assets-list.html",
+					"Approval/html/Agency.html",
+					"Approval/html/complete.html",
+					"Approval/html/handle.html",
+					"Approval/html/launch.html",
+					"Approval/html/question.html",
+					"Approval/html/repair.html",
+					"login/html/login.html"
+				],
+				"priority": 0
+			},
+			"Assets/html/Assets-list.html": {
+				"resources": [],
+				"refer": [
+					"Assets/html/Assets-detail.html",
+					"login/html/login.html",
+					"screen/html/company.html",
+					"screen/html/department.html",
+					"screen/html/Asset-type.html",
+					"screen/html/place.html",
+					"screen/html/region.html"
+				],
+				"priority": 0
+			},
+			"Approval/html/Agency.html": {
+				"resources": [],
+				"refer": [
+					"Approval/html/Inspection.html",
+					"Approval/html/Approval-main.html",
+					"Approval/html/Inspection-detail.html",
+					"Approval/html/question-detail.html",
+					"Approval/html/repair-detail.html",
+					"login/html/login.html"
+				],
+				"priority": 0
+			},
+			"Approval/html/handle.html": {
+				"resources": [],
+				"refer": [
+					"Approval/html/Approval-main.html",
+					"Approval/html/Inspection.html",
+					"Approval/html/repair-detail.html",
+					"Approval/html/Inspection-detail.html",
+					"Approval/html/question-detail.html",
+					"login/html/login.html"
+				],
+				"priority": 0
+			},
+			"Approval/html/launch.html": {
+				"resources": [],
+				"refer": [
+					"Approval/html/Approval-main.html",
+					"Approval/html/question-detail.html",
+					"Approval/html/repair-detail.html",
+					"login/html/login.html"
+				],
+				"priority": 0
+			},
+			"Approval/html/complete.html": {
+				"resources": [],
+				"refer": [
+					"Approval/html/Approval-main.html",
+					"Approval/html/question-detail.html",
+					"Approval/html/Inspection-detail.html",
+					"Approval/html/repair-detail.html"
+				],
+				"priority": 0
+			},
+			"home/html/searchResult.html": {
+				"resources": [],
+				"refer": [
+					"login/html/login.html",
+					"Assets/html/Assets-detail.html"
+				],
+				"priority": 0
+			},
+			"Assets/html/Assets-detail.html": {
+				"resources": [],
+				"refer": [
+					"login/html/login.html"
+				],
+				"priority": 0
+			},
+			"Approval/html/Inspection.html": {
+				"resources": [],
+				"refer": [
+					"login/html/login.html",
+					"Approval/html/Inspection-detail.html"
+				],
+				"priority": 0
+			},
+			"Approval/html/Inspection-detail.html": {
+				"resources": [],
+				"refer": [
+					"login/html/login.html",
+					"home/html/scanner.html",
+					"Approval/html/scanner1.html"
+				],
+				"priority": 0
+			},
+			"Approval/html/question-detail.html": {
+				"resources": [],
+				"refer": [
+					"Approval/html/question-handing.html",
+					"login/html/login.html",
+					"Approval/html/question.html"
+				],
+				"priority": 0
+			},
+			"Approval/html/question-handing.html": {
+				"resources": [],
+				"refer": [
+					"login/html/login.html",
+					"Approval/html/question-detail.html"
+				],
+				"priority": 0
+			},
+			"Approval/html/repair-detail.html": {
+				"resources": [],
+				"refer": [
+					"Approval/html/question-handing.html",
+					"Approval/html/repair.html"
+				],
+				"priority": 0
+			},
+			"Approval/html/scanner1.html": {
+				"resources": [],
+				"refer": [
+					"Assets/html/Assets-detail.html",
+					"Approval/html/implement.html"
+				],
+				"priority": 0
+			},
+			"Approval/html/implement.html": {
+				"resources": [],
+				"refer": [
+					"login/html/login.html",
+					"Approval/html/Inspection-detail.html"
+				],
+				"priority": 0
+			},
+			"Approval/html/repair.html": {
+				"resources": [],
+				"refer": [
+					"Approval/html/repairlist.html",
+					"Approval/html/Approval-main.html",
+					"Approval/html/choice.html"
+				],
+				"priority": 0
+			},
+			"Approval/html/question.html": {
+				"resources": [],
+				"refer": [
+					"Approval/html/choice.html",
+					"Approval/html/Approval-main.html",
+					"Approval/html/choiceAssets.html",
+					"Approval/html/choiceRegion.html",
+					"Approval/html/choicePlace.html"
+				],
+				"priority": 0
+			},
+			"Approval/html/choice.html": {
+				"resources": [],
+				"refer": [
+					"login/html/login.html",
+					"Approval/html/question.html"
+				],
+				"priority": 0
+			},
+			"Approval/html/repairlist.html": {
+				"resources": [],
+				"refer": [
+					"Approval/html/repair.html"
+				],
+				"priority": 0
+			},
+			"Approval/html/choiceAssets.html": {
+				"resources": [],
+				"refer": [
+					"Approval/html/question.html"
+				],
+				"priority": 0
+			},
+			"Approval/html/choiceRegion.html": {
+				"resources": [],
+				"refer": [
+					"Approval/html/question.html"
+				],
+				"priority": 0
+			},
+			"Approval/html/choicePlace.html": {
+				"resources": [],
+				"refer": [
+					"Approval/html/question.html"
+				],
+				"priority": 0
+			},
+			"ucenter/html/ucenter-info.html": {
+				"resources": [],
+				"refer": [
+					"login/html/login.html"
+				],
+				"priority": 0
+			}
+		},
+		"idle": {
+			"resources": [
+				"js/common-fontSize.js",
+				"js/mui.min.js",
+				"fonts/mui.ttf",
+				"index/js/index.js",
+				"css/mui.min.css",
+				"js/mui.js",
+				"css/mui.css"
+			]
+		}
+	},
+	"fullscreen": false
+}
